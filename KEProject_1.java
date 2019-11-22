@@ -88,9 +88,7 @@ class Square {
 
     private Piece piece;
 
-    public Piece getPiece() {
-        return piece;
-    }
+
 }
 
 

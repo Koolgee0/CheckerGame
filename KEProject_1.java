@@ -19,6 +19,18 @@ class Checker {
     private Player playerone;
     private Player playertwo;
 
+    public Board getGameboard() {
+        return gameboard;
+    }
+
+    public Player getPlayerone() {
+        return playerone;
+    }
+
+    public Player getPlayertwo() {
+        return playertwo;
+    }
+
     public void setUpByUser() {
     }
 
@@ -76,7 +88,9 @@ class Square {
 
     private Piece piece;
 
-
+    public Piece getPiece() {
+        return piece;
+    }
 }
 
 
@@ -93,13 +107,7 @@ class Piece {
 }
 
 class Board {
-    private Square square;
-
-    public String toString() {
-
-        return " ";
-
-    }
+    private Square[][] squares = new Square[8][8];
 
     public boolean isMoveLegal() {
         return false;
@@ -107,6 +115,12 @@ class Board {
 
 
     public void movePiece(Move move) {
+
+    }
+
+    public String toString() {
+
+        return " ";
 
     }
 

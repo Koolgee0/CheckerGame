@@ -107,7 +107,7 @@ class Piece {
 class Board {
     private Square[][] squares = new Square[8][8];
 
-    public boolean isMoveLegal() {
+    public boolean isMoveLegal(Move move) {
         return false;
     }
 

@@ -1,7 +1,7 @@
 package com.javaacademy.projects.Projects;
 
 
-//Ritika was here
+//Ritika was here and so was glenn 
 public class KEProject_1 {
     public static void main(String[] args) {
         Checker checkersGame = new Checker();

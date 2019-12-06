@@ -1,7 +1,7 @@
 package com.javaacademy.projects.Projects;
 
 
-//Ritika was here and so was glenn 
+//Ritika was here and so was glenn
 public class KEProject_1 {
     public static void main(String[] args) {
         Checker checkersGame = new Checker();
@@ -14,7 +14,7 @@ public class KEProject_1 {
         checkersGame.displayEndOfGameMessage();
     }
 }
-
+//Glenn
 class Checker {
     private Board gameboard;
     private Player playerone;
@@ -49,7 +49,7 @@ class Checker {
     public void displayEndOfGameMessage() {
     }
 }
-
+//Gelia
 abstract class Player {
 
     private String color;
@@ -67,14 +67,14 @@ abstract class Player {
 
 }
 
-
+//All
 class Human extends Player {
 
     Human(String color) {
         super(color);
     }
 }
-
+//Glenn
 class Computer extends Player {
 
 
@@ -92,7 +92,7 @@ class Square {
 
 }
 
-
+//Ritika
 class Piece {
     private String color;
 
@@ -104,7 +104,7 @@ class Piece {
     }
 
 }
-
+//Ritika
 class Board {
     private Square[][] squares = new Square[8][8];
 
@@ -125,7 +125,7 @@ class Board {
 
 }
 
-
+//Gelia
 class Move {
     private int initalXCoor;
     private int initalYCoor;

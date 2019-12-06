@@ -96,7 +96,7 @@ class Square {
 class Piece {
     private String color;
 
-    //private String rank;
+    private String rank;
 
     public void kingPiece() {
 

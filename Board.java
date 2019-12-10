@@ -1,8 +1,13 @@
 package com.javaacademy.projects.Projects.CheckerGame;
 
 
+
 //
 //Ritika
+
+
+
+
 public class Board {
     private Square[][] squares = new Square[8][8];
 

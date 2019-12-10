@@ -6,6 +6,12 @@ import com.javaacademy.projects.Projects.CheckerGame.Computer;
 import com.javaacademy.projects.Projects.CheckerGame.Player;
 import com.javaacademy.projects.Projects.CheckerGame.Square;
 
+
+
+import com.javaacademy.projects.Projects.CheckerGame.Checker;
+import com.javaacademy.projects.Projects.CheckerGame.Player;
+
+
 //Ritika was here and so was glenn
 public class KEProject_1 {
     public static void main(String[] args) {
@@ -18,6 +24,7 @@ public class KEProject_1 {
         }
         checkersGame.displayEndOfGameMessage();
     }
+
 
     //Glenn
     public static class Checker {
@@ -63,6 +70,7 @@ public class KEProject_1 {
         public void displayEndOfGameMessage() {
         }
     }
+
 }
 
 

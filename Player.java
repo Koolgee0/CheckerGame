@@ -1,5 +1,5 @@
 package com.javaacademy.projects.Projects.CheckerGame;
-
+//
 //Gelia
 public abstract class Player {
 

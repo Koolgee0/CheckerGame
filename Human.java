@@ -5,7 +5,7 @@ package com.javaacademy.projects.Projects.CheckerGame;
 //All
 public class Human extends Player {
 
-    Human(String color) {
+    public Human(String color) {
         super(color);
     }
 }

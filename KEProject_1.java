@@ -1,10 +1,8 @@
 package com.javaacademy.projects.Projects;
+
 import java.util.*;
 
-import com.javaacademy.projects.Projects.CheckerGame.Board;
-import com.javaacademy.projects.Projects.CheckerGame.Computer;
-import com.javaacademy.projects.Projects.CheckerGame.Player;
-import com.javaacademy.projects.Projects.CheckerGame.Square;
+import com.javaacademy.projects.Projects.CheckerGame.*;
 
 //Ritika was here and so was glenn
 public class KEProject_1 {
@@ -27,6 +25,7 @@ public class KEProject_1 {
         private Player playerone;
         private Player playertwo;
 
+
         public Board getGameboard() {
             return gameboard;
         }
@@ -43,9 +42,11 @@ public class KEProject_1 {
             System.out.println("Hello Welcome Player Here is were you choose if you want Computer or Human opponet");
             System.out.println("Type Computer for Computer Player or Type Human for Human Player");
             String choose = input.nextLine();
-            if(choose.equals("Computer") ){
-                System.out.println();
-            }else System.out.println("Human");
+            if (choose.equals("Computer")) {
+                playertwo = new Computer("Black");
+            } else System.out.println("Human");
+            playertwo= new Human("Black");
+
         }
 
         public boolean isInProgress() {
@@ -57,7 +58,7 @@ public class KEProject_1 {
         }
 
         public void displayBoard() {
-            return ;
+            return;
         }
 
         public void displayEndOfGameMessage() {

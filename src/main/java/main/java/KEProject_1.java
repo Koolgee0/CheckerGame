@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.*;
 //Ritika was here and so was glenn
 public class KEProject_1 {
@@ -32,8 +34,8 @@ class Checker {
     }
 
     public void setUpByUser() {
-        System.out.println("Hello Welcome Player Here is were you choose if you want Computer or Human opponet");
-        System.out.println("Type Computer for Computer Player or Type Human for Human Player");
+        System.out.println("Hello Welcome main.java.Player Here is were you choose if you want main.java.Computer or main.java.Human opponet");
+        System.out.println("Type main.java.Computer for main.java.Computer main.java.Player or Type main.java.Human for main.java.Human main.java.Player");
         String choose = input.nextLine();
         if (choose.equals("Computer")) {
             playertwo = new Computer("Black");

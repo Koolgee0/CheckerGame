@@ -1,7 +1,3 @@
-package com.javaacademy.projects.Projects.CheckerGame;
-
-
-
 
 public class Board {
     private Square[][] squares = new Square[8][8];

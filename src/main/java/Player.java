@@ -1,5 +1,3 @@
-package com.javaacademy.projects.Projects.CheckerGame;
-
 
 public abstract class Player {
 

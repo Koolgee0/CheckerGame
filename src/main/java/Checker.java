@@ -1,4 +1,3 @@
-package com.javaacademy.projects.Projects.CheckerGame;
 
  public class Checker {
     private Board gameboard;

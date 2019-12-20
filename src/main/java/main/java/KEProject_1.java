@@ -1,6 +1,7 @@
 package main.java;
 
 import java.util.*;
+
 //Ritika was here and so was glenn
 public class KEProject_1 {
     public static void main(String[] args) {
@@ -35,16 +36,18 @@ class Checker {
 
     public void setUpByUser() {
         System.out.println("Hello Welcome main.java.Player Here is were you choose if you want main.java.Computer or main.java.Human opponet");
-        System.out.println("Type main.java.Computer for main.java.Computer main.java.Player or Type main.java.Human for main.java.Human main.java.Player");
+        System.out.println("Computer for Computer Player or Type Human for Human Player");
         String choose = input.nextLine();
         if (choose.equals("Computer")) {
             playertwo = new Computer("Black");
-        } else System.out.println("Human");
-        playertwo= new Human("Black");
+        } else {
+            playertwo.makeMove(gameboard);
+            playertwo = new Human("Black");
+        }
+        playerone = new Human("Red");
     }
 
     public boolean isInProgress() {
-
         return false;
     }
 
@@ -52,9 +55,11 @@ class Checker {
     }
 
     public void displayBoard() {
+
     }
 
     public void displayEndOfGameMessage() {
+
     }
 }
 

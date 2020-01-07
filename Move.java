@@ -13,23 +13,5 @@ public class Move {
     	this.endingYCoor = endingYCoor; 
     	
     }
-    
-    public int getInitialXCoor() {
-        return initialXCoor;
-    }
 
-    public int getInitialYCoor() {
-        return initialYCoor;
-    }
-
-    public int getEndingXCoor() {
-        return endingXCoor;
-    }
-
-    public int getEndingYCoor() {
-        return endingYCoor;
-    }
 }
-
-
-

@@ -6,13 +6,11 @@ public abstract class Player {
 
     Player(String color) {
         this.color = color;
-
-
     }
 
-    public Move makeMove(Board board) {
-        return null;
+    abstract Move makeMove(Board board);
+
+    public String getColor() {
+        return color;
     }
-
-
 }

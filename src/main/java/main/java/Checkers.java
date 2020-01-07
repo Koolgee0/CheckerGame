@@ -7,27 +7,17 @@ class Checkers {
     private Board gameBoard;
     private Player playerOne;
     private Player playerTwo;
+    private int turnToggle = 1;
+    private String message;
 
     Checkers() {
         gameBoard = new Board();
     }
 
-    public Board getGameBoard() {
-        return gameBoard;
-    }
-
-    public Player getPlayerOne() {
-        return playerOne;
-    }
-
-    public Player getPlayerTwo() {
-        return playerTwo;
-    }
-
     public void setUpByUser() {
-        System.out.println("Hello Welcome Player Here is were you choose Red or Black");
-        String choose = input.nextLine();
-        if (choose.equals("Red")) {
+        System.out.println("Welcome player, would you like to play as Red pieces? (y or n)");
+        String choose = input.nextLine().toUpperCase();
+        if (choose.equals("Y")) {
             playerOne = new Human("Red");
             playerTwo = new Human("Black");
         } else {
@@ -38,14 +28,28 @@ class Checkers {
     }
 
     public boolean isInProgress() {
-        return true;
+        if (gameBoard.getRedCheckerCount() == 0) {
+            message = "Black Wins";
+            return false;
+        } else if (gameBoard.getBlackCheckerCount() == 0) {
+            message = "Red Wins";
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public void currentPlayerTakeTurn() {
-        while (true) {
-            String playerInput = input.nextLine();
-            break;
+        if (turnToggle == 1) {
+            System.out.println("Player One's Turn (" + playerOne.getColor() + ")");
+            Move move = playerOne.makeMove(gameBoard);
+            gameBoard.movePiece(move);
+        } else {
+            System.out.println("Player Two's Turn (" + playerTwo.getColor() + ")");
+            Move move = playerTwo.makeMove(gameBoard);
+            gameBoard.movePiece(move);
         }
+        turnToggle *= -1;
     }
 
     public void displayBoard() {
@@ -53,6 +57,6 @@ class Checkers {
     }
 
     public void displayEndOfGameMessage() {
-        System.out.println("You Win");
+        System.out.println(message);
     }
 }

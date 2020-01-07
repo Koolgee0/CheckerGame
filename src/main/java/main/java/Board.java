@@ -1,4 +1,4 @@
-package src.main.java;
+package main.java;
 
 
 import java.util.HashMap;
@@ -275,6 +275,7 @@ public class Board {
         }
         if (didKingMoveDiagonallyTwoSpaces(move)) {
             Square captureSquare = getCaptureSquare(move);
+            assert captureSquare != null;
             if (captureSquare.getPiece() == null) {
                 return false;
             }
